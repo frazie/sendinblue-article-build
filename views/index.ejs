@@ -7,6 +7,43 @@
     <title>Sendinblue </title>
 </head>
 <body>
-    
+    <section>
+        <p>This is just a simple page to test it our API is working as needed.</p>
+        <p>You will use the form below to send data to our backend server.</p>
+    </section>
+    <section>
+        <form action="/send_email" method="POST" id="infoForm">
+            <div style="margin-bottom: 10px;">
+                <input type="email" id="userEmail" name="userEmail">
+                <label for="email">email </label>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <input type="text" id="firstname" name="firstname">
+                <label for="first">Your First Name</label>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <input type="text" id="address" name="address">
+                <label for="address">Enter your address</label>
+            </div>
+            <div style="margin-bottom: 10px; border: 1px; border-style: solid; border-color: black; padding-left: 5px;">
+                <div style="margin-bottom: 5px;">
+                    <p>Select an option and have it sent to your door.</p>
+                    <select name="ingredients" id="ingredients">
+                        <option value=""></option>
+                        <option value="eggs">Eggs</option>
+                        <option value="bread">Bread</option>
+                        <option value="margarine">Margarine</option>
+                        <option value="milk">milk</option>
+                    </select>
+                    <label for="ingredients">Ingredients</label>
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Add your message here...."></textarea>
+                </div>
+            </div>
+            
+            <button type="submit">Send Email</button>
+        </form>
+    </section>
 </body>
 </html>
